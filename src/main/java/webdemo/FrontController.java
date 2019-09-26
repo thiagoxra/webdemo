@@ -21,7 +21,7 @@ import webdemo.entidades.Usuario;
 
 import static org.apache.commons.lang3.RegExUtils.removeFirst;
 
-@WebServlet(urlPatterns ={"/usuarios/*", "/produtos/*"})
+@WebServlet(urlPatterns={"/usuarios/*", "/produtos/*"})
 public class FrontController extends HttpServlet {
 
 	/**

@@ -8,25 +8,25 @@
 <head>
 	<c:import url="/WEB-INF/templates/common/_metatags.jsp" />
 	<c:import url="/WEB-INF/templates/common/_bootstrap_css.jsp" />	
-	<title>Editar Usuário</title>
+	<title>Editar Produto</title>
 </head>
 <body class="container">
 	<h1>Editar Produto</h1>
-
+	
 	<form method="post" action="/produtos/edit/${Produto.id}">
 		<div class="form-group">
 		<minha:validatedinputtext rotulo="Nome" valor="${Produto.nome}"
 			erroValidacao="${NomeInvalido}" invalido="${empty NomeInvalido}"
-			textoPlaceholder="Nome do Produto" 
+			textoPlaceholder="Seu Nome" 
 			idCampo="nome-input" nomeCampo="nome" /> 
 		</div>
 		<div class="form-group">
-			<minha:validatedinputtext rotulo="Preco" valor="${Produto.preco}"
-				erroValidacao="${PrecoInvalido}" invalido="${empty PrecoInvalido}"
-				textoPlaceholder="Preço do Produto"
-				idCampo="preco-input" nomeCampo="preco" />	
+			<minha:validatedinputtext rotulo="Produto" valor="${Produto.produto}"
+				erroValidacao="${ProdutoInvalido}" invalido="${empty ProdutoInvalido}"
+				textoPlaceholder="Seu Produto"
+				idCampo="produto-input" nomeCampo="produto" />	
 		</div>
-
+		
 		<a href="/produtos" class="btn btn-danger">Cancelar</a>
 		<button type="submit" class="btn btn-primary">Salvar</button>
 	</form>

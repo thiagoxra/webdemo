@@ -11,19 +11,19 @@
 	<title>Criar Usuário</title>
 </head>
 <body class="container">
-	<h1>Criar Produto</h1>
+	<h1>Criar Usuário</h1>
 	<form method="post" action="/produtos">
 		<div class="form-group">
 			<minha:validatedinputtext rotulo="Nome" valor="${param.nome}"
 				erroValidacao="${NomeInvalido}" invalido="${empty NomeInvalido}"
-				textoPlaceholder="Nome do Produto" 
+				textoPlaceholder="Seu Nome" 
 				idCampo="nome-input" nomeCampo="nome" /> 
 		</div>
 		<div class="form-group">
-			<minha:validatedinputtext rotulo="Preco" valor="${param.preco}"
-				erroValidacao="${PrecoInvalido}" invalido="${empty PrecoInvalido}"
-				textoPlaceholder="Preço do Produto"
-				idCampo="preco-input" nomeCampo="preco" />	
+			<minha:validatedinputtext rotulo="Descricao" valor="${param.descricao}"
+				erroValidacao="${DescricaoInvalido}" invalido="${empty DescricaoInvalido}"
+				textoPlaceholder="Seu Descricao"
+				idCampo="Descricao-input" nomeCampo="Descricao" />	
 		</div>
 		<a href="/produtos" class="btn btn-danger">Cancelar</a>
 		<button type="submit" class="btn btn-primary">Salvar</button>
